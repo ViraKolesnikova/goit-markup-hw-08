@@ -1,0 +1,49 @@
+//Особенности оказания услуг
+
+
+.features-section__title {
+  @extend %section-title;
+}
+
+// .features-list {
+//   @extend %align-items;
+//   margin-top: -40px;
+// }
+
+.features-list__item {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }  
+}
+
+.features-list__item--icon-background {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-background-color);
+}
+
+.features-list__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features-list__title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-list__discription {
+  font-size: 14px;
+  line-height: 1.71;
+}

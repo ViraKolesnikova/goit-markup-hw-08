@@ -1,0 +1,90 @@
+.page-footer {
+  background-color: var(--hero-footer-background);
+}
+
+.footer {
+  // @extend %align-items;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+  // align-items: baseline;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.footer-contact__address {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  color: var(--white-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-list,
+.address-list__item {
+  margin-top: 8px;
+}
+
+.address-list__link {
+  color: var(--phone-mail-in-footer);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+
+.footer-invitation {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.footer-invitation__text,
+.subscribing-form__text {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-social-link-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-links__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+//Форма для подписки
+.subscribing-form {
+  text-align: center;
+}
+
+// .subscribing-form__area {
+//   display: flex;
+// }
+
+.subscribing-form__input {
+  padding: 15px 16px;
+  width: 100%;
+  margin-bottom: 20px;
+  
+  color: var(--phone-mail-in-footer);
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  &::placeholder {
+    color: var(--phone-mail-in-footer);
+  }
+}

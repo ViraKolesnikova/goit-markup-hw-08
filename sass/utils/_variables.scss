@@ -1,0 +1,33 @@
+/*основной цвет текста #757575*/
+/*цвет заголовков #212121*/
+/*белый #FFFFFF*/
+/*акцент #2196F3*/
+/*основной цвет фона #FFFFFF*/
+/*вторичный цвет фона #F5F4FA*/
+/*фон героя и футера #2F303A*/
+/*цвет части логотипа #000000*/
+/*цвет телефона и мейла в футере rgba(255, 255, 255, 0,6)*/
+/*цвет рамки в хедере #ECECEC*/
+/*цвет ссылок на соцсети #AFB1B8*/
+
+:root {
+--primery-text-color: #757575;
+--title-color: #212121;
+--white-color: #ffffff;
+--accent: #2196f3;
+--main-background-color: #ffffff;
+--secondary-background-color: #f5f4fa;
+--hero-footer-background: #2f303a;
+--second-part-of-logo: #000000;
+--phone-mail-in-footer: rgba(255, 255, 255, 0.6);
+--header-border: #ececec;
+--cards-border: #eeeeee;
+--social-links-color: #afb1b8;
+--footer-social-links-back: rgba(255, 255, 255, 0.1);
+--services-title-bg: rgba(47, 48, 58, 0.8);
+--overlay-bg: rgba(33, 150, 243, 0.9);
+--backdrop-color: rgba(0, 0, 0, 0.2);
+--action-btn-color: #188ce8;
+--primary-text-font: Roboto, sans-serif;
+--logo-text-font: Raleway, sans-serif;
+}
