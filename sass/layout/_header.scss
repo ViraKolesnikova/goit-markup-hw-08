@@ -1,16 +1,28 @@
 //Стилизация шапки
 .page-header {
+  padding: 10px 0;
   border-bottom-color: var(--header-border);
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
 
 // .header,
-// .navigation,
+
 // .nav-menu,
 // .contact-list {
 //   @extend %align-items;
 // }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu,
+.contact-list {
+  display: none;
+}
 
 .nav-menu__link {
   display: block;
