@@ -1,12 +1,23 @@
 //Стилизация шапки
 .page-header {
+  position: relative;
+  
   padding: 10px 0;
   border-bottom-color: var(--header-border);
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
 
-// .header,
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu,
+.contact-list {
+  display: none;
+}
 
 // .nav-menu,
 // .contact-list {
@@ -19,16 +30,7 @@
 //   align-items: center;
 // }
 
-// .nav-menu,
-// .contact-list {
-//   display: none;
-// }
 
-.mobile-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .nav-menu__link {
   display: block;
