@@ -10,17 +10,28 @@
   // align-items: baseline;
 }
 
+.tablet-positioning {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+}
 .footer-contact {
   text-align: center;
 }
 
 .footer-contact__address {
   margin-top: 20px;
-  margin-bottom: 60px;
   color: var(--white-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;    
+  }
 }
 
 .address-list,
@@ -39,8 +50,11 @@
 }
 
 .footer-invitation {
-  margin-bottom: 60px;
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-invitation__text,
@@ -86,5 +100,9 @@
 
   &::placeholder {
     color: var(--phone-mail-in-footer);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
 }

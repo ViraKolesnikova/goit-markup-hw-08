@@ -8,9 +8,12 @@
   @extend %section-title;
 }
 
-// .employees-cards {
-//   @extend %align-items;
-// }
+.employees-cards {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;    
+  }  
+}
 
 .employees-cards__item {
   width: 100%;
@@ -24,6 +27,19 @@
 
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: auto;
+
+    &:nth-child(2n+1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
   }
 }
 

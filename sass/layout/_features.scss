@@ -1,21 +1,30 @@
 //Особенности оказания услуг
 
-
 .features-section__title {
   @extend %section-title;
 }
 
-// .features-list {
-//   @extend %align-items;
-//   margin-top: -40px;
-// }
+.features-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;    
+  }  
+}
 
 .features-list__item {
   width: 100%;
 
   &:not(:last-child) {
     margin-bottom: 30px;
-  }  
+  }
+  
+  @media screen and (min-width: 768px) {
+    width: 354px;
+
+    &:nth-child(2n+1) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .features-list__item--icon-background {
