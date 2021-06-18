@@ -370,10 +370,11 @@ body {
     top: 0;
     width: 100vw;
     height: auto;
+    z-index: 10;
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
-    overflow: auto;
+    overflow-y: auto;
     background-color: var(--white-color);
     opacity: 0;
     visibility: hidden;
@@ -438,6 +439,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .mobile-menu-socials__item:not(:last-child) {
@@ -445,6 +447,8 @@ body {
 }
 
 .mobile-menu-socials__link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -452,11 +456,11 @@ body {
   color: var(--accent);
 }
 
-.mobile-menu-socials__link::after {
+.mobile-menu-socials__link--before::before {
   content: "";
   display: inline-block;
   width: 22px;
-  height: 1px;
+  margin-left: -10px;
   border-bottom: 1px solid var(--mobile-menu-socials-after);
   transform: rotate(90deg);
 }
@@ -484,6 +488,7 @@ body {
 
 .hero-section__title {
   margin: 0 auto 30px;
+  padding: 0 15px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 26px;
