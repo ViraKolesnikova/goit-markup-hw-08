@@ -19,6 +19,21 @@
 }
 
 .clients-list__link {
+  @media screen and (min-width:320px) and (max-width: 360px) {
+    width: 140px;
+    height: 82px;
+  }
+
+  @media screen and (min-width:361px) and (max-width: 410px) {
+    width: 160px;
+    height: 88px;
+  }
+
+  @media screen and (min-width:411px) and (max-width: 460px) {
+    width: 186px;
+    height: 90px;
+  }
+
   display: flex;
   width: 210px;
   height: 92px;

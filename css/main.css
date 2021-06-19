@@ -130,6 +130,13 @@ body {
   line-height: 1.17;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .logo--first-part {
   color: var(--accent);
 }
@@ -329,6 +336,29 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .nav-menu {
+    margin-left: 93px;
+  }
+}
+
+.contact-list {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -374,10 +404,6 @@ body {
   margin-right: 50px;
 }
 
-.contact-list {
-  margin-left: auto;
-}
-
 @media screen and (min-width: 768px) {
   .contact-list__link {
     color: var(--primery-text-color);
@@ -394,6 +420,9 @@ body {
 
 @media screen and (min-width: 1200px) {
   .contact-list__link {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -577,7 +606,9 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero-section__image {
+    padding: 200px 0;
     max-width: 1600px;
+    height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
   }
 }
@@ -756,6 +787,27 @@ body {
   color: var(--social-links-color);
   border: 1px solid var(--social-links-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  .clients-list__link {
+    width: 140px;
+    height: 82px;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 410px) {
+  .clients-list__link {
+    width: 160px;
+    height: 88px;
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 460px) {
+  .clients-list__link {
+    width: 186px;
+    height: 90px;
+  }
 }
 
 .clients-list__link:hover, .clients-list__link:focus {
