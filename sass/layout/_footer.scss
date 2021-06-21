@@ -3,23 +3,44 @@
 }
 
 .footer {
-  // @extend %align-items;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    margin-right: auto;
+  }
   
-  // align-items: baseline;
 }
 
-.tablet-positioning {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+.tablet-positioning {  
+   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  } 
 }
+
 .footer-contact {
-  text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;    
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-contact__address {
@@ -27,16 +48,16 @@
   color: var(--white-color);
   font-style: normal;
   font-size: 14px;
-  line-height: 1.71;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;    
-  }
+  line-height: 1.71; 
 }
 
 .address-list,
 .address-list__item {
   margin-top: 8px;
+
+  @media screen and (max-width: 1200px) {
+    margin-top: 9px;
+  }
 }
 
 .address-list__link {
@@ -49,11 +70,9 @@
   }
 }
 
-.footer-invitation {
-  text-align: center;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
+.footer-invitation {  
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
   }
 }
 
@@ -66,6 +85,10 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;    
+  }
 }
 
 .footer-social-link-list {
@@ -79,12 +102,16 @@
 
 //Форма для подписки
 .subscribing-form {
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;    
+  }
 }
 
-// .subscribing-form__area {
-//   display: flex;
-// }
+.subscribing-form__area {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 
 .subscribing-form__input {
   padding: 15px 16px;
@@ -104,5 +131,11 @@
 
   @media screen and (min-width: 768px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }

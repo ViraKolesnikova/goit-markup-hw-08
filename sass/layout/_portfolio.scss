@@ -61,6 +61,11 @@
     padding: 49px 24px;
   }
 
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    padding: 63px 24px;
+  }
+
   .gallery-list__link:hover &,
   .gallery-list__link:focus & {
     transform: translateY(0%);
@@ -108,6 +113,10 @@
     height: auto;
     margin-right: 30px;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
 }
 

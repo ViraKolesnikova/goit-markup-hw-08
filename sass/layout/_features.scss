@@ -8,20 +8,34 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;    
-  }  
+  } 
+  
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .features-list__item {
   width: 100%;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   
   @media screen and (min-width: 768px) {
     width: 354px;
 
     &:nth-child(2n+1) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+
+    &:not(:last-child) {
       margin-right: 30px;
     }
   }
@@ -43,7 +57,10 @@
 .features-list__title {
   margin-top: 30px;
   margin-bottom: 10px;
-  text-align: center;
+  
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 
   color: var(--title-color);
   font-weight: 700;

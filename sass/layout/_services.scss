@@ -3,32 +3,37 @@
 .services-section {
 
   display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0;
+  }
 }
 
-// .services-section__title {
-//   @extend %section-title;
-// }
+.services-section__title {
+  @extend %section-title;
+}
 
-// .services-list {
-//   @extend %align-items;
-//   justify-content: space-between;
-// }
+.services-list {
+  @extend %align-items;
+  justify-content: space-between;
+}
 
-// .services-list__item {
-//   position: relative;
-// }
+.services-list__item {
+  position: relative;
+}
 
-// .services-list__title {
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   padding-top: 27px;
-//   padding-bottom: 27px;
-//   text-align: center;
+.services-list__title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
 
-//   font-size: 14px;
-//   line-height: 1.17;
-//   text-transform: uppercase;
-//   color: var(--white-color);
-//   background-color: var(--services-title-bg);
-// }
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--services-title-bg);
+}
