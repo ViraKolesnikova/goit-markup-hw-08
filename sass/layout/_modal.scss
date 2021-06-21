@@ -32,17 +32,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    max-width: 450px;
-    max-height: 609px;    
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    width: 100vw;
+    max-height: 609px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
-    height: 609px;
+   height: 609px;
   }
 
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
   }
@@ -96,6 +96,10 @@
   margin-bottom: 10px;
 }
 
+.form-field--last-child-mg {
+  margin-bottom: 20px;
+}
+
 .form-field__input--icon-position {
   position: relative;
 }
@@ -111,7 +115,6 @@
   @extend %input-textarea-field;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 20px;
   resize: none;
 
   .form-field:focus-within & {
@@ -159,7 +162,6 @@
 
 .agreement {
   display: block;
-  // margin-left: 12px;
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 12px;
@@ -168,6 +170,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
+    text-align: center;
   }
 }
 
