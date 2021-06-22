@@ -491,7 +491,7 @@ body {
 }
 
 .mobile-menu-list {
-  margin-bottom: 240px;
+  margin-bottom: 180px;
 }
 
 .mobile-menu-list__item:not(:last-child) {
@@ -599,8 +599,7 @@ body {
   padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
-  max-width: 480px;
-  height: auto;
+  height: 400px;
   background-color: var(--hero-footer-background);
   background-size: cover;
 }
@@ -619,7 +618,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero-section__image {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
   }
 }
